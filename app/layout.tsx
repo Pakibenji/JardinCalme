@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { body } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Jardin Calme',
@@ -13,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={body.style}>{children}</body>
     </html>
   )
 }
